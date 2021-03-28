@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trianglify Background Generator</title>
+    <title>Générateur de fond d'écran</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -28,53 +28,54 @@
     </div>
     <div id="controls">
       <div class="panel">
-        <h2>Render Options</h2>
-        <label class="screen-size-input" for="bg-width">Width</label>
-        <input class="screen-size-input" id="bg-width" type="text" value="1400"/>
-        <label class="screen-size-input" for="bg-height">Height</label>
-        <input class="screen-size-input" id="bg-height" type="text" value="1000"/>
+        <h2>Options de rendu</h2>
+        <label class="screen-size-input" for="bg-width">Hauter</label>
+        <input class="screen-size-input" id="bg-width" type="text" value="1920"/>
+        <label class="screen-size-input" for="bg-height">Largeur</label>
+        <input class="screen-size-input" id="bg-height" type="text" value="1080"/>
         
-        <label for="cell-slider">Cell Size</label>
+        <label for="cell-slider">Grosseur maximum</label>
         <div id="cell-slider" class="slider"></div>
         <p class="slider-value" id="cell-value">150</p>
 
-        <label for="cellpadding-slider">Cell Padding</label>
+        <label for="cellpadding-slider">Distance minimum</label>
         <div id="cellpadding-slider" class="slider"></div>
         <p class="slider-value" id="cellpadding-value">15</p>
 
-        <label class="bleed-label" for="bleed-slider">Bleed</label>
+        <label class="bleed-label" for="bleed-slider">Génération extra</label>
         <div id="bleed-slider" class="slider"></div>
         <p class="slider-value" id="bleed-value">150</p>
       </div>
       <div class="panel">
-        <h2>Colour Scheme</h2>
+        <h2>Options de couleurs</h2>
         <p class="input-info">
-          Select from the top 100 palettes from <a target="_blank" href="http://colourlovers.com">colourlovers</a>, and also the <a href="http://bl.ocks.org/mbostock/5577023" target="_blank">ColorBrewer</a> palettes.
+          Sélectionner depuis les 100 meilleures palettes de <a target="_blank" href="http://colourlovers.com">colourlovers</a>, et aussi de <a href="http://bl.ocks.org/mbostock/5577023" target="_blank">ColorBrewer</a>.
         </p>
-        <label class="colour-input-label" for="x-gradient">X Gradient</label>
+        <label class="colour-input-label" for="x-gradient">Dégradé en X</label>
         <input class="colour-input" id="x-gradient" type="radio" name="gradient-direction" value="x" checked="checked">
-        <label class="colour-input-label" for="y-gradient">Y Gradient</label>
+        <label class="colour-input-label" for="y-gradient">Dégradé en Y</label>
         <input class="colour-input" id="y-gradient" type="radio" name="gradient-direction" value="y">
-        <label class="colour-input-label" for="both-gradient">Both</label>
+        <label class="colour-input-label" for="both-gradient">Dégradé sur les 2 axes</label>
         <input class="colour-input" id="both-gradient" type="radio" name="gradient-direction" value="z">
 
-        <label>Palette List</label>
+        <label>Liste des palettes</label>
         <div id="colour-list"></div>
-        <button id="randomise-colours" class="colour-buttons" href="#">Randomise Colours</button>
-        <button id="generate">Regenerate</button>
-        <a id="download-btn" href="#" target="_blank">Download</a>
-        <a href="help.html">Help</a>
+        <button id="randomise-colours" class="colour-buttons" href="#">Palettes au hasard</button>
+        <button id="generate">Regénérer</button>
+        <a id="download-btn" href="#" target="_blank" download>Télécharger</a>
+        <a href="aide.html">Aide</a>
       </div>
 
       </div>
       <div id="backgrounds">
       </div>
       <footer>
-        <div class="info">
-          <p>Powered by <a href="https://github.com/qrohlf/trianglify" target="_blank">trianglify</a></p>
-          <p><a href="https://github.com/alssndro/trianglify-background-generator/" target="_blank">View on Github</a></p>
-        </div>
-      </footer>
+				<div class="info">
+					<p><a href="generator.html">English</a></p>
+					<p>Basé sur <a href="https://github.com/alssndro/trianglify-background-generator" target="_blank">Trianglify Background Generator</a></p>
+					<p>Créé par <a href="https://artivain.tk" target="_blank">Artivain</a></p>
+				</div>
+			</footer>
       <canvas id="the-canvas"></canvas>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
