@@ -88,7 +88,7 @@ function Palette(name, colors) {
 function getColourSchemes(limit) {
   $.ajax({
       type: "GET",
-      url: "http://www.colourlovers.com/api/palettes/top?jsonCallback=?",
+      url: "https://www.colourlovers.com/api/palettes/top?jsonCallback=?",
       data: { numResults: limit },
       dataType: 'json',
       success: function(data){
