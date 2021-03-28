@@ -1,19 +1,20 @@
-# Trianglify Background Generator
+# Background generator
 
-![](app.png)
+![](screenshot-en.jpg)
 
-A tool to generate images from SVGs rendered by the [Trianglify](https://github.com/qrohlf/trianglify) JS plugin.
+A tool to generate backgrounds from SVGs made with the [Trianglify](https://github.com/qrohlf/trianglify) JS plugin.
 
-The app utilises the [ColourLovers](http:colourlovers.com) API to allow backgrounds to be generated using colours from the top 100
+The app utilises the [ColourLovers](https://colourlovers.com) API to allow backgrounds to be generated using colours from the top 100
 palettes.
 
-See the app in action [here](http://alssndro.github.io/trianglify-background-generator/).
+See the app in action [here](https://artivain.github.io/background-generator/).
 
-## Issues
+# Générateur de fond d'écran
 
-There are some compatibility issues regarding conversion of SVGs to images in-browser. At the moment
-the Download feature does not work in Safari.
+![](screenshot-fr.jpg)
 
-For the moment I have also omitted the 'noise' slider since converting medium/large resolution SVGs (with noise) to PNG kept crashing the Chrome tab. 
+Un outil pour créer des fond d'écran à partir de SVGs générés par le plugin JS [Trianglify](https://github.com/qrohlf/trianglify).
 
-From browsing around other repos using the trianglify plugin, this seems to be a common issue. I should note that this isn't the fault of the plugin itself, but the implementation of the canvas element which seems to struggle with noise.
+L'application utilise l'API de [ColourLovers](https://colourlovers.com) pour avoir des palettes de couleurs automatiquement choisies dans le top 100.
+
+Voir le générateur en action [ici](https://artivain.github.io/background-generator/).
