@@ -1,4 +1,4 @@
-![](logo-artivain.png)
+![](logo-artivain-small.png)
 
 
 
